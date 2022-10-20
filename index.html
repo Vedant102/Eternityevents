@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <!-- <meta name="Eternity Events" content="A description of the page">
+    <meta name="robots" content="..., ..."> for all sites
+    <meta name="googlebot" content="..., ..."> for google
+    <link rel="author" href="https://plus.google.com/u/0/109859280204979591787/posts"/> -->
+
     <title>Eternity Events</title>
     <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">  
 
@@ -31,24 +38,46 @@
 <!-- floating widget ends -->
     
 <!-- header section starts  -->
+<!-- <span style="background: rgb(184, 9, 9); position: fixed; top: 0; width: 100%;"> Eternity Events</span> -->
+
 
 <header class="header">
 
     <a href="#home" class="logo"><img class="headlogo" src="./images/logo.png"></a>
 
     <nav class="navbar">
-        <a href="#home">home</a>
-        <a href="#about">about</a>
-        <a href="#service">services</a>
-        <a href="#gallery">gallery</a>
-        <a href="#review">reviews</a>
-        <a href="#contact">contact</a>
+        <a href="#home"><b>HOME</b></a>
+        <a href="#about"><b>ABOUT US</b></a>
+        <a href="#service"><b>SERVICES</b></a>
+        <a href="#gallery"><b>GALLERY</b></a>
+        <a href="#review"><b>GALLERY</b></a>
+        <a href="#contact"><b>CONTACT</b></a>
 
     </nav>
 
     <div id="menu-bars" class="fas fa-bars"></div>
 
 </header>
+
+<!-- <header>
+<span class="logocontainer">
+    <a href="#home" class="logo"><img style="position: static; align-self: center;"class="headlogo" src="./images/logo.png"></a>
+</span> </header>
+
+<header class="header">
+
+    <nav class="navbar">
+        <a href="#home"><b>home</b></a>
+        <a href="#about"><b>about</b></a>
+        <a href="#service"><b>services</b></a>
+        <a href="#gallery"><b>gallery</b></a>
+        <a href="#review"><b>reviews</b></a>
+        <a href="#contact"><b>contact</b></a>
+    </nav>
+
+    <div id="menu-bars" class="fas fa-bars"></div>
+
+</header> -->
 
 <!-- header section ends -->
 
@@ -57,7 +86,7 @@
 <section class="home" id="home">
 
     <div class="content">
-        <h3>its time to celebrate! the best <span> event organizers </span></h3>
+        <h3>its time to celebrate with the best <span> event planner </span></h3>
         <a href="#contact" class="btn">contact us</a>
     </div>
     <div class="swiper mySwiper">
@@ -112,26 +141,27 @@
     
         <div class="content">
             <h3>we will give a very special celebration for you</h3>
-            <p>With our passion, Hardwork, creativity and inspiration, we are committed to help you to achieve your dream day or special event within your budget.</p>
+            <p>With our <b>passion, Hardwork, creativity</b> and <b>inspiration,</b> we are committed to help you to achieve your dream day or special event within your budget.</p>
             <p>Our wedding planning and events coordination services are designed for Any Sized budget, meaning anyone. Our wedding planning and events coordination services are designed.</p>
-            <a href="#contact" class="btn">contact us</a>
-            <div class="project-counter-wrp">
-                <ul>
-                    <li>
-                        <p id="number1"></p>
-                        <span> happy customers</span>
-                    </li>
-                    <li>
-                        <p id="number2" class="number"></p>
-                        <span>years of experience</span>
-                    </li>
-                    <li>
-                        <p id="number3" class="number"></p>
-                        <span>projects done</span>    
-                    </li>
-                </ul>
-            </div>
+            <!-- <a href="#contact" class="btn">contact us</a> -->
         </div>
+    </div>
+
+    <div class="project-counter-wrp">
+        <ul>
+            <li>
+                <p id="number1"></p>
+                <span> happy customers</span>
+            </li>
+            <li>
+                <p id="number2" class="number"></p>
+                <span>years of experience</span>
+            </li>
+            <li>
+                <p id="number3" class="number"></p>
+                <span>projects done</span>    
+            </li>
+        </ul>
     </div>
     
     
@@ -183,7 +213,7 @@
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, suscipit.</p>
         </div>
 
-        <div class="box">
+        <!-- <div class="box">
             <i class="fas fa-signature"></i>
             <h3>naming ceremony</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, suscipit.</p>
@@ -193,7 +223,7 @@
             <i class="fas fa-dungeon"></i>
             <h3>Inaugration ceremony</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, suscipit.</p>
-        </div>
+        </div> -->
 
     </div>
 
@@ -231,7 +261,7 @@
         </div>
 
         <div class="box">
-            <img src="images/g-3.jpg" alt="">
+            <img src="images/g-6.jpg" alt="">
             <h3 class="title">photos and events</h3>
             <div class="icons">
                 <a href="#" class="fas fa-heart"></a>
@@ -261,7 +291,7 @@
         </div>
 
         <div class="box">
-            <img src="images/g-6.jpg" alt="">
+            <img src="images/g-3.jpg" alt="">
             <h3 class="title">photos and events</h3>
             <div class="icons">
                 <a href="#" class="fas fa-heart"></a>
@@ -342,13 +372,13 @@
     <form action="">
         <div class="inputBox">
             <input type="text" placeholder="name">
-            <input type="email" placeholder="email">
-        </div>
-        <div class="inputBox">
             <input type="tel" placeholder="number">
-            <input type="text" placeholder="event">
         </div>
-        <textarea name="" placeholder="your message" id="" cols="30" rows="10"></textarea>
+        <div class="inputBox1" >
+            <input type="email" placeholder="email">
+            <!-- <input type="text" placeholder="event"> -->
+        </div>
+        <textarea name="" placeholder="your message" id="" cols="0" rows="7"></textarea>
         <input type="submit" value="send message" class="btn">
     </form>
 
@@ -392,7 +422,7 @@
 
     </div>
 
-    <div class="credit"> Eternity <span> Events </span> | all rights reserved </div>
+    <div class="credit"> Created with ❤️ by <a href="#home" target="_blank"><span>  </span></a>| all rights reserved </div>
 
 </section>
 
@@ -406,15 +436,16 @@
   	 	 	<section class="contact" id="contact">
 
                 <h1 class="heading"> <span>contact</span> us </h1>
+                <h3 style="text-align:center; color: black;">Send us your requirement and our team will get in touch <br>with you in next 24 hours.</h3>
                 <form action="">
                     <!-- <div class="close" class="closeform1">&times;</div> -->
                     <div class="inputBox">
                         <input type="text" placeholder="name">
-                        <input type="email" placeholder="email">
-                    </div>
-                    <div class="inputBox">
                         <input type="tel" placeholder="number">
-                        <input type="text" placeholder="event">
+                    </div>
+                    <div class="inputBox1">
+                        <input type="email" placeholder="email">
+                        <!-- <input type="text" placeholder="event"> -->
                     </div>
                     <textarea name="" placeholder="your message" id="" cols="0" rows="5"></textarea>
                     <input type="submit" value="send message" class="btn">

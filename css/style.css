@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;600;700&display=swap');
 
 :root{
-    --main-color:#3867d6;
+    --main-color:#20bf6b;
 }
 
 *{
@@ -10,7 +10,7 @@
     box-sizing: border-box;
     outline: none; border:none;
     text-decoration: none;
-    text-transform: capitalize;
+    text-transform:capitalize;
     transition: .2s linear;
 }
 
@@ -35,7 +35,7 @@ html::-webkit-scrollbar-thumb{
 }
 
 body{
-    background: #222;
+    background: rgb(255, 255, 255);
 }
 
 /* Floating widget */
@@ -46,7 +46,7 @@ body{
 	bottom:40px;
 	right:40px;
 	background-color:#25d366;
-	color:#FFF;
+	color:rgb(0, 0, 0);
 	border-radius:50px;
 	text-align:center;
     font-size:30px;
@@ -66,7 +66,7 @@ section{
 .heading{
     text-align: center;
     padding-bottom: 2rem;
-    color:#fff;
+    color:rgb(0, 0, 0);
     text-transform: uppercase;
     font-size: 4rem;
 }
@@ -82,21 +82,25 @@ section{
     padding:.8rem 3rem;
     font-size: 1.7rem;
     border-radius: .5rem;
-    background: #666;
-    color:#fff;
+    background: #20bf6b;
+    color:rgb(0, 0, 0);
     cursor: pointer;
     font-weight: 600;
 }
 
 .btn:hover{
-    background:var(--main-color);
+    background:#666;
 }
-
+.logocontainer{
+    /* position:sticky; */
+    margin: 40%;
+    background: rgb(255, 255, 255);
+}
 .header{
     position:sticky;
     top:0; left: 0; right: 0;
     z-index: 10000;
-    background: #333;
+    background: rgb(255, 255, 255);
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -105,24 +109,25 @@ section{
 
 .header .logo{
     font-weight: bolder;
-    color:#fff;
+    color:rgb(0, 0, 0);
     font-size: 1rem;
     height: 100%;
     max-width: 50%;
+    display: contents;
 }
 
 .headlogo{
-    max-width: 30%;
+    padding: 5px;
+    max-width: 20%;
 } 
 .header .logo span{
     color:#20bf6b;
 }
 
 .header .navbar a{
-    font-size: 1.7rem;
-    color:#fff;
+    font-size: 2rem;
+    color:rgb(0, 0, 0);
     margin-left: 2rem;
-
 }
 
 .header .navbar a:hover{
@@ -131,20 +136,20 @@ section{
 
 #menu-bars{
     font-size: 3rem;
-    color:#fff;
+    color:rgb(0, 0, 0);
     cursor: pointer;
     display: none;
 }
 
 .home .content{
     text-align: center;
-    padding-top: 6rem;
+    padding-top: 0rem;
     margin:2rem auto;
     max-width: 70rem;
 }
 
 .home .content h3{
-    color:#fff;
+    color:rgb(0, 0, 0);
     font-size: 4.5rem;
     text-transform: uppercase;
 }
@@ -194,15 +199,15 @@ section{
 }
 
 .project-counter-wrp li span {
-    color: #fff;
+    color: rgb(0, 0, 0);
     display: flex;
     justify-content: center;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: bold;  
 }
 
 #number1, #number2, #number3{
-    font-size: 30px;
+    font-size: 40px;
     color: #20bf6b;
     font-family: cursive;
 }
@@ -217,7 +222,7 @@ section{
 
 .service .box-container .box{
     border-radius: .5rem;
-    background:#333;
+    background:rgb(255, 255, 255);
     text-align: center;
     padding:2.5rem;
 }
@@ -229,18 +234,18 @@ section{
     border-radius: 50%;
     font-size: 2.5rem;
     background:var(--main-color);
-    color:#fff;
+    color:rgb(0, 0, 0);
 }
 
 .service .box-container .box h3{
     font-size: 2rem;
-    color:#fff;
+    color:rgb(0, 0, 0);
     padding:1rem 0;
 }
 
 .service .box-container .box p{
     font-size: 1.4rem;
-    color:#eee;
+    color:rgb(0, 0, 0);
     line-height: 1.8;
 }
 
@@ -259,7 +264,7 @@ section{
 .about .row .image img{ 
     width: 100%;
     border-radius: .5rem;
-    border:1rem solid #333;
+    border:1rem solid rgb(255, 255, 255);
 }
 
 .about .row .content{
@@ -268,12 +273,12 @@ section{
 
 .about .row .content h3{
     font-size: 3.5rem;
-    color:#fff;
+    color:rgb(0, 0, 0);
 }
 
 .about .row .content p{
-    font-size: 1.5rem;
-    color:#eee;
+    font-size: 2rem;
+    color:rgb(0, 0, 0);
     padding:1rem 0;
     line-height: 2;
 }
@@ -286,7 +291,7 @@ section{
 
 .gallery .box-container .box{
     position: relative;
-    border:1rem solid #333;
+    border:1rem solid rgb(255, 255, 255);
     border-radius: .5rem;
     height: 25rem;
     cursor: pointer;
@@ -299,16 +304,16 @@ section{
     object-fit: cover;
 }
 
-.gallery .box-container .box:hover img{
+/* .gallery .box-container .box:hover img{
     transform: scale(1.1);
     filter: grayscale();
-}
+} */
 
 .gallery .box-container .box .title{
     position: absolute;
     top:-10rem; left:0; right: 0;
-    background:#333;
-    color:#fff;
+    background:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
     text-align: center;
     padding-bottom: 1rem;
     font-size: 2rem;
@@ -321,7 +326,7 @@ section{
 .gallery .box-container .box .icons{
     position: absolute;
     bottom:-10rem; left:0; right: 0;
-    background:#333;
+    background:rgb(255, 255, 255);
     padding-top: 1rem;
     text-align: center;
 }
@@ -333,7 +338,7 @@ section{
 .gallery .box-container .box .icons a{
     font-size: 2rem;
     margin:.5rem 1rem;
-    color:#fff;
+    color:rgb(0, 0, 0);
 }
 
 .gallery .box-container .box .icons a:hover{
@@ -342,7 +347,7 @@ section{
 
 .reivew .box{
     border-radius: .5rem;
-    background: #333;
+    background: rgb(255, 255, 255);
     padding:2rem;
     position: relative;
 	
@@ -371,17 +376,17 @@ section{
 
 .reivew .box .user h3{
     font-size: 2rem;
-    color:#fff;
+    color:rgb(0, 0, 0);
 }
 
 .reivew .box .user span{
     font-size: 1.5rem;
-    color:#eee;
+    color:rgb(0, 0, 0);
 }
 
 .reivew .box p{
     line-height: 2;
-    color:#eee;
+    color:rgb(0, 0, 0);
     padding:.5rem 0;
     font-size: 1.6rem;
 }
@@ -397,32 +402,60 @@ section{
     justify-content: space-between;
     flex-wrap: wrap;
 }
+.contact form .inputBox1{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 
 .contact form .inputBox input,
 .contact form textarea{
     width: 100%;
-    background:#333;
+    background:rgb(226, 224, 224);
     border-radius: .5rem;
     padding:1rem;
     margin:.7rem 0;
     font-size: 1.5rem;
-    color:#fff;
+    color:rgb(0, 0, 0);
+    text-transform: none;
+}
+.contact form .inputBox1 input,
+.contact form textarea{
+    width: 100%;
+    background:rgb(226, 224, 224);
+    border-radius: .5rem;
+    padding:1rem;
+    margin:.7rem 0;
+    font-size: 1.5rem;
+    color:rgb(0, 0, 0);
     text-transform: none;
 }
 
 .contact form .inputBox input::placeholder,
 .contact form textarea::placeholder{
-    color:#eee;
+    color:rgb(0, 0, 0);
+    text-transform: capitalize;
+}
+.contact form .inputBox1 input::placeholder,
+.contact form textarea::placeholder{
+    color:rgb(0, 0, 0);
     text-transform: capitalize;
 }
 
-.contact form .inputBox input:focus,
+/* .contact form .inputBox input:focus,
+.contact form textarea:focus{
+    background:rgb(192, 32, 32);
+}
+.contact form .inputBox1 input:focus,
 .contact form textarea:focus{
     background:#444;
-}
+} */
 
 .contact form .inputBox input{
     width: 49%;
+}
+.contact form .inputBox1 input{
+    width: 100%;
 }
 
 .contact form textarea{
@@ -430,7 +463,7 @@ section{
 }
 
 .footer{
-    background:#111;
+    background:rgb(255, 255, 255);
 }
 
 .footer .box-container{
@@ -444,30 +477,30 @@ section{
 .footer .box-container .box h3{
     font-size: 2.5rem;
     padding:1rem 0;
-    color:#fff;
+    color:var(--main-color);
 }
 
 .footer .box-container .box a{
     display: block;
     font-size: 1.5rem;
     padding:1rem 0;
-    color:#eee;
+    color:rgb(0, 0, 0);
 }
 
 .footer .box-container .box a i{
     padding-right: .5rem;
-    color:var(--main-color);
+    color:rgb(0, 0, 0);
 }
 
 .footer .box-container .box a:hover i{
     padding-right: 1.5rem;
-    color:#fff;
+    color:var(--main-color);
 }
 
 .footer .credit{
     text-align: center;
-    border-top: .1rem solid #222;
-    color:#fff;
+    border-top: .1rem solid rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
     padding:2rem;
     padding-top: 2.5rem;
     margin-top: 1rem;
@@ -478,10 +511,14 @@ section{
     color:#20bf6b;
 }
 
+.footerlogo{
+    width: 30%;
+    margin: 0;
+}
 .theme-toggler{
     position: fixed;
     top:10rem; right:-20rem;
-    background: #333;
+    background: rgb(255, 255, 255);
     z-index: 1000;
     width: 20rem;
     text-align: center;
@@ -492,7 +529,7 @@ section{
 }
 
 .theme-toggler h3{
-    color:#fff;
+    color:rgb(0, 0, 0);
     padding:1rem 0;
     font-size: 2rem;
 }
@@ -516,12 +553,12 @@ section{
     position: absolute;
     top:0; left:-5.9rem;
     padding:1.3rem 1.5rem;
-    background:#333;
+    background:rgb(255, 255, 255);
     cursor: pointer;
 }
 
 .theme-toggler .toggle-btn i{
-    color:#fff;
+    color:rgb(0, 0, 0);
     font-size: 3rem;
     animation: spin 4s linear infinite;
 }
@@ -545,7 +582,7 @@ section{
         padding: 1.5rem 2rem;
     }
     .headlogo{
-        max-width: 50%;
+        max-width:80%
     }
     section{
         padding:2rem;
@@ -555,6 +592,10 @@ section{
         height: 300px;
         padding: 10px;
       }
+      .logocontainer{
+        position:sticky;
+        margin: 0%;
+    }
 
 }
 
@@ -567,8 +608,8 @@ section{
     .header .navbar{
         position: absolute;
         top:100%; left:0; right:0;
-        border-top: .1rem solid #222;
-        background: #333;
+        border-top: .1rem solid rgb(255, 255, 255);
+        background: rgb(255, 255, 255);
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
 
@@ -582,9 +623,9 @@ section{
 
     .header .navbar a{
         display: flex;
-        background:#222;
+        background:rgb(255, 255, 255);
         border-radius: .5rem;
-        padding:1.3rem;
+        padding:3rem;
         margin:1.3rem;
         font-size: 2rem;
     
@@ -630,6 +671,8 @@ section{
 
 /* popup form */
 
+/* popup form */
+
 
 
 .login-popup{
@@ -640,7 +683,7 @@ section{
 	width: 100%;
 	height: 100%;
 	z-index: 1099;
-	background-color:rgba(234, 231, 231, 0.6);
+	background-color:rgba(203, 197, 197, 0.6);
 	visibility: hidden;
 	opacity: 0;
 	transition: all 1s ease;
@@ -650,7 +693,7 @@ section{
 	opacity: 1;
 }
 .login-popup .box{
-	background-color:#222;
+	background-color:rgb(255, 255, 255);
 	position: absolute;
 	left: 50%;
 	top:50%;
@@ -728,8 +771,8 @@ section{
     height: 20px;
 }
 .closebutton{
-    background: #222;
-    color: white;
+    background: rgb(255, 255, 255);
+    color: #000000;
 }
 /*responsive*/
 @media(max-width: 767px){
@@ -747,8 +790,6 @@ section{
         max-width: 100%;
 	}
 }
-
-
 
 
 

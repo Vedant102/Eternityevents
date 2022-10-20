@@ -84,7 +84,7 @@ let count3 = 50;
 function projectDone() {
     count1++
     document.querySelector("#number1").innerHTML = count1
-    if (count1 == 718) {
+    if (count1 == 1060) {
         clearInterval(customer)
     }
 
@@ -93,7 +93,7 @@ function projectDone() {
 function happyClients() {
     count2++
     document.querySelector("#number2").innerHTML = count2 
-    if (count2 == 5) {
+    if (count2 == 6) {
         clearInterval(experience)
     }
 }
@@ -101,7 +101,7 @@ function happyClients() {
 function cupsCoffee() {
     count3++
     document.querySelector("#number3").innerHTML = count3
-    if (count3 == 540) {
+    if (count3 == 1286) {
         clearInterval(project)
     }
 }
